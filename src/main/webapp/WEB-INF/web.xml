@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+     version="3.0">
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <!-- REST -->
+    <security-constraint>
+        <display-name>REST</display-name>
+        <web-resource-collection>
+            <web-resource-name>REST</web-resource-name>
+            <description>REST</description>
+            <url-pattern>/api/rest/service/helloWorld</url-pattern>
+        </web-resource-collection>
+        <auth-constraint>
+            <description>REST</description>
+            <role-name>user</role-name>
+        </auth-constraint>
+    </security-constraint>
+    <login-config>
+        <auth-method>FORM</auth-method>
+        <realm-name>TOTVSTech</realm-name>
+        <form-login-config>
+            <form-login-page>/login.jsp</form-login-page>
+            <form-error-page>/loginfail.jsp</form-error-page>
+        </form-login-config>
+    </login-config>
+    <security-role>
+        <role-name>totvstech</role-name>
+    </security-role>
+    <security-role>
+        <role-name>user</role-name>
+    </security-role>
+    <security-role>
+        <role-name>sysadmin</role-name>
+    </security-role>
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>
