@@ -1,3 +1,5 @@
+com\widgetpublica\util\ErrorStatus.class
 com\widgetpublica\rest\ServiceRest.class
 com\widgetpublica\ActivationClass.class
+com\widgetpublica\util\RestConstant.class
 com\widgetpublica\rest\conf\ApplicationConfig.class
