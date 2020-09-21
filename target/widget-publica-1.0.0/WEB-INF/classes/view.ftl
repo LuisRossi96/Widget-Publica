@@ -10,25 +10,36 @@
 		    <div class="panel-body">
 		        <div class="row">
 		        	<div class="col-md-4">
-		        		<label for="nome">Nome</label>
-		        		<input type="text" id="nome" name="nome" class="form-control" >
+		        		<label for="nome_${instanceId}">Nome</label>
+		        		<input type="text" id="nome_${instanceId}" name="nome_${instanceId}" class="form-control" >
 		        	</div>
 		        	<div class="col-md-4">
-		        		<label for="email">Email</label>
-		        		<input type="text" id="email" name="email" class="form-control" >
+		        		<label for="email_${instanceId}">Email</label>
+		        		<input type="text" id="email_${instanceId}" name="email_${instanceId}" class="form-control" >
 		        	</div>
 		        </div>
 		        
 		        <div class="row">
 		        	<div class="col-md-4">
-		        		<label for="telefone">Telefone</label>
-		        		<input type="text" id="telefone" name="telefone" class="form-control" >
+		        		<label for="telefone_${instanceId}">Telefone</label>
+		        		<input type="text" id="telefone_${instanceId}" name="telefone_${instanceId}" class="form-control" >
 		        	</div>
 		        	<div class="col-md-4">
-		        		<label for="vaga">Vaga</label>
-		        		<input type="text" id="vaga" name="vaga" class="form-control" >
+		        		<label for="vaga_${instanceId}">Vaga</label>
+		        		<input type="text" id="vaga_${instanceId}" name="vaga_${instanceId}" class="form-control" >
 		        	</div>
 		        </div>
+		     	
+				<div class="row">
+			       	<div class="col-md-4">
+			       		<label for="viewMatricula_${instanceId}">Matricula do Usuário</label>
+			       		<input type="text" id="viewMatricula_${instanceId}" name="viewMatricula_${instanceId}" class="form-control" readonly value="${atividade!''}">
+			       	</div>
+			       	<div class="col-md-4">
+			       		<label for="viewAtividade_${instanceId}">Atividade Destino</label>
+			       		<input type="text" id="viewAtividade_${instanceId}" name="viewAtividade_${instanceId}" class="form-control" readonly value="${matricula!''}">
+			       	</div>
+				</div>
 		        
 		        <hr />
 		        

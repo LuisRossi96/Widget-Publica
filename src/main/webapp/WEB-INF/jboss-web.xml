@@ -2,7 +2,9 @@
 <jboss-web>
     <context-root>/widget_publica</context-root>
     <disable-cross-context>false</disable-cross-context>
+    
     <security-domain>TOTVSTech</security-domain>
+    
     <security-role>
         <role-name>user</role-name>
         <principal-name>totvstech</principal-name>
@@ -19,4 +21,8 @@
         <role-name>admin</role-name>
         <principal-name>wcmadmin</principal-name>
     </security-role>   
+    
+    <valve>
+        <class-name>com.totvs.technology.auth.saml.TOTVSAuthenticatorValve</class-name>
+    </valve>
 </jboss-web>

@@ -27,7 +27,6 @@
 			<version>1.6.5</version>
 			<scope>provided</scope>
 		</dependency>
-
 		<dependency>
 			<groupId>com.fluig</groupId>
 			<artifactId>fluig-sdk-keyring</artifactId>
@@ -40,7 +39,6 @@
 			<version>1.2.1.1</version>
 		</dependency>
 		
-		
 		<!-- https://mvnrepository.com/artifact/com.googlecode.json-simple/json-simple -->
 		<dependency>
 			<groupId>com.googlecode.json-simple</groupId>
@@ -48,7 +46,37 @@
 			<version>1.1</version>
 		</dependency>
 
-		<!-- /others -->
+		<!-- /others -->		
+		<dependency>
+			<groupId>com.fluig</groupId>
+			<artifactId>foundation-security-authentication-saml</artifactId>
+			<version>1.5.13</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.fluig</groupId>
+			<artifactId>wcm-sdk-service</artifactId>
+			<version>1.5.13</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.fluig</groupId>
+			<artifactId>wcm-common</artifactId>
+			<version>1.5.13</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.fluig</groupId>
+			<artifactId>wcm-core</artifactId>
+			<version>1.5.13</version>
+			<type>jar</type>
+		</dependency>
+		<dependency>
+			<groupId>com.fluig</groupId>
+			<artifactId>ecm-ejb-api</artifactId>
+			<version>1.5.13</version>
+			<type>jar</type>
+		</dependency>
 	</dependencies>
 	
 	<build>

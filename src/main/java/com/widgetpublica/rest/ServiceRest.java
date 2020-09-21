@@ -29,11 +29,12 @@ import com.fluig.sdk.api.customappkey.KeyVO;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 
+import com.totvs.technology.wcm.sdk.rest.WCMRest;
 import com.widgetpublica.util.ErrorStatus;
 import com.widgetpublica.util.RestConstant;
 
 @Path("/service")
-public class ServiceRest {
+public class ServiceRest extends WCMRest {
 		
     @GET
     @Path("helloWorld")
@@ -95,14 +96,12 @@ public class ServiceRest {
         JSONParser parser = new JSONParser();
         JSONObject obj = (JSONObject) parser.parse(params);
         
-    
         String nome = (String) obj.get("nome"); 
         String email = (String) obj.get("email"); 
         String telefone = (String) obj.get("telefone"); 
         String vaga = (String) obj.get("vaga"); 
-
-        String atividadeDestino = "2";
-        String usuarioDestino = "luis.rossi";
+        String atividadeDestino = (String) obj.get("atividade");
+        String usuarioDestino = (String) obj.get("matricula");
         String comentarios = "Iniciado via pagina publica";
         
         int cod_empresa = 1;
